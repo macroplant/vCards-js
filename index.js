@@ -250,7 +250,7 @@ var vCard = (function () {
          * URL entries
          * @type {Array<URL>}
          */
-        urls: '',
+        urls: [],
 
         /**
          * vCard version
