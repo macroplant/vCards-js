@@ -127,28 +127,16 @@ var vCard = (function () {
         birthday: '',
 
         /**
-         * Cell phone number
-         * @type {String}
+         * Phone Number entries
+         * @type {Array<PhoneNumber>}
          */
-        cellPhone: '',
+        phoneNumbers: [],
 
         /**
-         * Other cell phone number or pager
-         * @type {String}
+         * Email Address entries
+         * @type {Array<EmailAddress>}
          */
-        pagerPhone: '',
-
-        /**
-         * The address for private electronic mail communication
-         * @type {String}
-         */
-        email: '',
-
-        /**
-         * The address for work-related electronic mail communication
-         * @type {String}
-         */
-        workEmail: '',
+        emailAddresses: [],
 
         /**
          * First name
@@ -169,22 +157,16 @@ var vCard = (function () {
         gender: '',
 
         /**
-         * Home mailing address
-         * @type {object}
+         * Mailing Address entries
+         * @type {Array<MailingAddress>}
          */
-        homeAddress: getMailingAddress(),
+        mailingAddresses: [],
 
         /**
-         * Home phone
-         * @type {String}
+         * Fax Number entries
+         * @type {Array<FaxNumber>}
          */
-        homePhone: '',
-
-        /**
-         * Home facsimile
-         * @type {String}
-         */
-        homeFax: '',
+        faxNumbers: [],
 
         /**
          * Last name
@@ -265,34 +247,10 @@ var vCard = (function () {
         title: '',
 
         /**
-         * URL pointing to a website that represents the person in some way
-         * @type {String}
+         * URL entries
+         * @type {Array<URL>}
          */
-        url: '',
-
-        /**
-         * URL pointing to a website that represents the person's work in some way
-         * @type {String}
-         */
-        workUrl: '',
-
-        /**
-         * Work mailing address
-         * @type {object}
-         */
-        workAddress: getMailingAddress(),
-
-        /**
-         * Work phone
-         * @type {String}
-         */
-        workPhone: '',
-
-        /**
-         * Work facsimile
-         * @type {String}
-         */
-        workFax: '',
+        urls: '',
 
         /**
          * vCard version
